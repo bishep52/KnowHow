@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-dark;
+  padding: 25px 30px;
+
+  &__menu {
+    &-list {
+      display: flex;
+      column-gap: 30px;
+    }
+
+    &-link {
+      position: relative;
+      letter-spacing: 4px;
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 100%;
+        left: 50%;
+        translate: -50%;
+        width: 0;
+        height: 2px;
+        background-color: $color-light;
+        transition-duration: $transition-duration;
+      }
+    }
+  }
+}
+
+.logo {
+  letter-spacing: 10px;
+}

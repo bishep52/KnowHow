@@ -1,0 +1,13 @@
+.button {
+    color: $color-light;
+    background-color: $color-dark;
+    border: none;
+    border-radius: $border-radius;
+    padding: 10px 15px;
+
+    &:hover {
+        color: $color-dark;
+        background-color: $color-light;
+        transition-duration: $transition-duration;
+    }
+}

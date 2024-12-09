@@ -1,0 +1,24 @@
+$color-light: #ffffff;
+$color-dark: #1f1f1f;
+$color-accent: #E4ECFF;
+$color-brown-light: #fecd42;
+
+$border: 1px solid $color-dark;
+$border-radius: 14px;
+
+$container-width: 1400px;
+$container-padding-x: 20px;
+
+$section-padding-y: 70px;
+
+$button-height: 48px;
+
+$transition-duration: 0.2s;
+
+@include desktop {
+    $section-padding-y: 50px;
+}
+
+@include mobile {
+    $section-padding-y: 30px;
+}

@@ -1,0 +1,31 @@
+.advantages {
+  padding: 100px 0;
+  height: 700px;
+  &__title {
+    text-align: center;
+    padding-bottom: 30px;
+    color: $color-light;
+    
+  }
+  &__image{
+    position: relative;
+    top: -25%;
+    right: -45%;
+  }
+
+  &__card {
+    text-align: center;
+    background-color: $color-light;
+    padding: 40px 0;
+    border-radius: $border-radius;
+    &:hover{
+      scale: 1;
+      transform: translate(0,2px);
+      border-bottom: 2px solid $color-brown-light ;
+    }
+   
+  }
+  .svg{
+    color:$color-brown-light;
+  }
+}
